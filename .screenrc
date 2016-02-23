@@ -1,0 +1,57 @@
+# Start message
+startup_message off 
+bell_msg ""
+vbell off
+ 
+# Set default encoding using utf8
+defutf8 on
+#defencoding utf8
+ 
+# Refresh the display when exiting programs
+altscreen on
+ 
+defscrollback 100000
+
+# Dynamic title
+shelltitle '$ |bash'
+ 
+bindkey -k k7 detach
+bindkey -k k8 kill
+bindkey -k k9 screen
+bindkey -k k; title
+bindkey -k F1 prev
+bindkey -k F2 next
+
+bindkey "^[`" select 0 
+bindkey "^[1" select 1 
+bindkey "^[2" select 2
+bindkey "^[3" select 3
+bindkey "^[4" select 4
+bindkey "^[5" select 5
+bindkey "^[6" select 6
+bindkey "^[7" select 7
+bindkey "^[8" select 8
+bindkey "^[9" select 9
+bindkey "^[0" select 10
+bindkey "^[-" select 11
+bindkey "^[=" select 12
+ 
+shell -bash
+ 
+bind s
+#ban掉鎖定預設熱鍵
+
+caption always "%{.KW} %-w%{.mW}%n %t%{.KW}%+w"
+#caption always "%{= wk} %{= KY} [%n]%t @ %H %{-} %= %{= KR} %l %{-} | %{= KG} %Y-%m-%d %{-} "
+
+hardstatus alwaysignore
+#hardstatus alwayslastline " %-Lw%{= Bw}%n%f %t%{-}%+Lw %=| %0c:%s "
+#hardstatus alwayslastline "%{R}[ %{w}%1` %{R}]%=%{M}%e %{G}%H %{Y} %c %{R} %d/%m/%Y %{K} Load: %l %{w}"
+#hardstatus string '%{= Kd} %{= Kd}%-w%{= Kr}[%{= KW}%n %t%{= Kr}]%{= Kd}%+w %-= %{KG} %H%{KW}|%{KY}%101`%{KW}|%D %M %d %Y%{= Kc} %C%A%{-}'
+
+#term screen-256color
+term xterm-256color
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce on
+ 
