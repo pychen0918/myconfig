@@ -28,6 +28,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'https://github.com/vim-scripts/vcscommand.vim.git'
 Plugin 'https://github.com/vim-scripts/taglist.vim.git'
 Plugin 'https://github.com/vim-scripts/OmniCppComplete.git'
+Plugin 'https://github.com/vim-scripts/vim-lastplace.git'
+Plugin 'https://github.com/vim-scripts/autoload_cscope.vim.git'
+Plugin 'https://github.com/vim-scripts/A.vim.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -59,7 +62,7 @@ let Tlist_Auto_Open = 1
 let Tlist_Show_One_File=1
 let Tlist_WinWidt =28
 let Tlist_Exit_OnlyWindow=1
-let Tlist_Use_Left_Window =1
+let Tlist_Use_Left_Window = 1
 
 " VCSCommand adjust
 highlight   DiffAdd       ctermfg=Black ctermbg=Green
@@ -85,3 +88,13 @@ set foldnestmax=20
 set nofoldenable
 set foldlevel=10
 highlight   Folded        ctermfg=grey ctermbg=blue
+:set hlsearch
+:set incsearch
+hi Search ctermbg=Yellow
+hi Search ctermfg=Black
+set paste
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
+set tags=tags;
