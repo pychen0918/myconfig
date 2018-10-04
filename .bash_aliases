@@ -12,4 +12,4 @@ function cd_up() {
     ;;
   esac
 }
-alias 'cdd'='cd_up'
+alias 'ccd'='cd_up'
