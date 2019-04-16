@@ -48,7 +48,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 " Auto complete Adjust
-highlight   Pmenu         ctermfg=White ctermbg=DarkBlue
+highlight   Pmenu         ctermfg=white ctermbg=blue
 highlight   PmenuSel      ctermfg=Black ctermbg=Gray
 highlight   PmenuSbar     ctermfg=Red ctermbg=Black
 highlight   PmenuThumb    ctermfg=Yellow ctermbg=DarkBlue
@@ -87,11 +87,12 @@ set foldmethod=syntax
 set foldnestmax=20
 set nofoldenable
 set foldlevel=10
-highlight   Folded        ctermfg=grey ctermbg=blue
+highlight   Folded      ctermfg=grey ctermbg=blue
+highlight   Search      ctermfg=black ctermbg=yellow
+highlight   Visual      ctermfg=white ctermbg=blue
+
 :set hlsearch
 :set incsearch
-hi Search ctermbg=Yellow
-hi Search ctermfg=Black
 set paste
 set expandtab
 set tabstop=4
