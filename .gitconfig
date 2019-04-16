@@ -1,0 +1,12 @@
+[user]
+	name = Raymond
+	email = raymond@henghung.com
+[core]
+	editor = vim
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	clog = log --graph --pretty=oneline --abbrev-commit
+	cst = status -uno
